@@ -1,0 +1,21 @@
+# 白描插件（独立仓库：MinatoHikari/pot-saladict-baimiao-ocrv2）
+baimiao-ocr/
+
+# 本地 DeepSeek-OCR 部署（llama.cpp + GGUF 模型，体积大不入库）
+local-deepseek-ocr/
+
+# 沙拉翻译源码克隆（研究用）
+saladict/
+
+# 会话数据
+.zcode/
+
+# 打包产物（由 CI 生成并发布到 Release）
+dist/
+
+# 白描专属测试
+test/baimiao.test.mjs
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,86 @@
+{
+    "id": "plugin.com.saladict.llm-ocr",
+    "plugin_type": "recognize",
+    "icon": "icon.svg",
+    "display": "DeepSeek / GLM 识别",
+    "homepage": "https://github.com/allentown521/saladict",
+    "needs": [
+        {
+            "key": "endpoint",
+            "display": "接口",
+            "type": "select",
+            "options": {
+                "zai": "Z.ai 国际站 · 按量付费",
+                "zai_coding": "Z.ai 国际站 · Coding Plan",
+                "bigmodel": "智谱中国站 · 按量付费",
+                "bigmodel_coding": "智谱中国站 · Coding Plan",
+                "deepseek": "DeepSeek 官方 (deepseek-flash 视觉模型)",
+                "custom": "自定义 (OpenAI 兼容，如本地 DeepSeek-OCR)"
+            }
+        },
+        {
+            "key": "customEndpoint",
+            "display": "自定义接口地址 (选填，填了优先，如 http://127.0.0.1:8080/v1)",
+            "type": "input"
+        },
+        {
+            "key": "apiKey",
+            "display": "API Key (本地服务可留空)",
+            "type": "input"
+        },
+        {
+            "key": "model",
+            "display": "模型 (选填，如 glm-4.6v / deepseek-flash)",
+            "type": "input"
+        },
+        {
+            "key": "thinking",
+            "display": "深度思考 (仅 GLM 模型生效)",
+            "type": "select",
+            "options": {
+                "disabled": "关闭 (更快)",
+                "enabled": "开启 (更准)",
+                "auto": "不发送参数 (由服务端决定)"
+            }
+        },
+        {
+            "key": "ocrPrompt",
+            "display": "自定义识别提示词 (选填，留空使用内置提示词)",
+            "type": "input"
+        }
+    ],
+    "language": {
+        "auto": "auto",
+        "zh_cn": "Simplified Chinese",
+        "zh_tw": "Traditional Chinese",
+        "yue": "Cantonese",
+        "ja": "Japanese",
+        "en": "English",
+        "ko": "Korean",
+        "fr": "French",
+        "es": "Spanish",
+        "ru": "Russian",
+        "de": "German",
+        "it": "Italian",
+        "tr": "Turkish",
+        "pt_pt": "Portuguese",
+        "pt_br": "Brazilian Portuguese",
+        "vi": "Vietnamese",
+        "id": "Indonesian",
+        "th": "Thai",
+        "ms": "Malay",
+        "ar": "Arabic",
+        "hi": "Hindi",
+        "mn_mo": "Mongolian",
+        "mn_cy": "Mongolian (Cyrillic)",
+        "km": "Khmer",
+        "nb_no": "Norwegian Bokmål",
+        "nn_no": "Norwegian Nynorsk",
+        "fa": "Persian",
+        "sv": "Swedish",
+        "pl": "Polish",
+        "nl": "Dutch",
+        "uk": "Ukrainian",
+        "he": "Hebrew"
+    }
+}

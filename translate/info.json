@@ -1,0 +1,71 @@
+{
+    "id": "plugin.com.saladict.llm-translate",
+    "plugin_type": "translate",
+    "icon": "icon.svg",
+    "display": "DeepSeek / GLM 翻译",
+    "homepage": "https://github.com/allentown521/saladict",
+    "needs": [
+        {
+            "key": "endpoint",
+            "display": "接口",
+            "type": "select",
+            "options": {
+                "deepseek": "DeepSeek 官方 (api.deepseek.com)",
+                "zai": "Z.ai 国际站 · 按量付费",
+                "zai_coding": "Z.ai 国际站 · Coding Plan",
+                "bigmodel": "智谱中国站 · 按量付费",
+                "bigmodel_coding": "智谱中国站 · Coding Plan",
+                "custom": "自定义 (OpenAI 兼容)"
+            }
+        },
+        {
+            "key": "customEndpoint",
+            "display": "自定义接口地址 (选填，填了优先，如 http://127.0.0.1:8080/v1)",
+            "type": "input"
+        },
+        {
+            "key": "apiKey",
+            "display": "API Key (本地服务可留空)",
+            "type": "input"
+        },
+        {
+            "key": "model",
+            "display": "模型 (选填，如 deepseek-chat / glm-4.7)",
+            "type": "input"
+        }
+    ],
+    "language": {
+        "auto": "auto",
+        "zh_cn": "Simplified Chinese",
+        "zh_tw": "Traditional Chinese",
+        "yue": "Cantonese",
+        "ja": "Japanese",
+        "en": "English",
+        "ko": "Korean",
+        "fr": "French",
+        "es": "Spanish",
+        "ru": "Russian",
+        "de": "German",
+        "it": "Italian",
+        "tr": "Turkish",
+        "pt_pt": "Portuguese",
+        "pt_br": "Brazilian Portuguese",
+        "vi": "Vietnamese",
+        "id": "Indonesian",
+        "th": "Thai",
+        "ms": "Malay",
+        "ar": "Arabic",
+        "hi": "Hindi",
+        "mn_mo": "Mongolian",
+        "mn_cy": "Mongolian (Cyrillic)",
+        "km": "Khmer",
+        "nb_no": "Norwegian Bokmål",
+        "nn_no": "Norwegian Nynorsk",
+        "fa": "Persian",
+        "sv": "Swedish",
+        "pl": "Polish",
+        "nl": "Dutch",
+        "uk": "Ukrainian",
+        "he": "Hebrew"
+    }
+}
